@@ -1,0 +1,313 @@
+<!-- The ninth hour I've got totally messed up because lost the flow and trying, exploring I didn't catch the time.-->
+<!DOCTYPE html>
+<html>
+    <head meta charset="utf-8">
+        <title>Jasmina Zukancic Resume</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+        *{margin:0;
+        padding:0;
+    box-sizing:border-box;
+font-family: 'Fredoka', sans-serif;}
+        body{
+            background: lightgray;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height: 100vh;
+        }
+        .box{
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgba(0, 0,0,0.1);
+            margin:50px;
+        }
+        .box .left{
+            position: relative;
+            background: orange;
+            padding:40px;
+        }
+        .box .right{
+            position: relative;
+            background:rgb(253, 250, 250);
+            padding:60px;
+        }
+        .text{
+            color:rgb(124, 121, 121);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items:left;
+            padding-bottom: 20px;
+            
+        }
+        .text a{
+            color:rgb(124, 121, 121);
+        }
+        .text .img{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            align-self:center;
+        }
+        .text .img img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .text h2{
+            color: rgb(90, 88, 88);
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4em;
+            border-bottom:1px solid rgb(233, 231, 231);
+        }
+        .text h2 span{
+            font-size: 0.8em;
+            font-weight: 300;
+        }
+        .contact{
+            padding-top:20px;
+        }
+        .title{
+            color: rgb(90, 88, 88);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+        .contact ul{
+            position: relative;
+                    }
+        .contact ul li{
+            display: flex;
+            position: relative;
+            list-style: none;
+            margin: 10px o;
+            padding: 0%;
+               }
+        .title .text{
+            color: rgb(233, 231, 231);
+        }
+        .education li{
+margin-bottom: 20px;
+        }
+        .education h5{
+            color:rgb(90, 88, 88);
+            font-weight:500;
+            font-size: 1em;
+        }
+        .education h4{
+            color:rgb(124, 121, 121);
+            font-weight: 300;
+        }
+        .box2{
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: #fff;
+            display: inline-block;
+            
+            box-shadow: 0 35px 55px rgba(0, 0,0,0.1);
+            margin:50px;
+        }
+        .experience h3{
+            text-transform: uppercase;
+            color:rgb(90, 88, 88);
+        }
+        .experience ul li{
+            position: relative;
+            color:rgb(7, 7, 85);
+        }
+        .contact .education ul li{
+            position: relative;
+            display: block;
+        }
+        
+        .experience .box2{
+            display:flex;
+            flex-direction: row;
+            margin:10px 0;
+            padding:10px;
+        }
+        .experience .box2 .year-company{
+            min-width:150px;
+        }
+        
+        .text1{
+            color:rgb(37, 8, 105);
+        }
+        .text1 h4{
+            text-transform: uppercase;
+        }
+        .title2{
+            text-transform: uppercase;
+            color: rgb(110, 109, 109);
+        }
+        .year-company h5{
+            color:rgb(37, 8, 105);
+        }
+        @media(max-width:1000px){
+            .box{
+                margin:10px;
+                grid-template-columns:repeat(1, 1fr);
+            }
+        }
+        .skills .box2{
+            display:flex;
+            flex-direction: row;
+            margin:10px 0;
+        }
+        .skills .box2 .text1{
+            margin:20px;
+        }
+        .language .percent{
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background: rgb(204, 134, 5);
+            display: block;
+           
+        }
+        .language .percent div{
+            position: absolute;
+            top:0;
+            left:0;
+            height: 100%;
+            background:rgb(233, 231, 231);
+        }
+       table{
+            width:400px;
+            margin: auto;
+        align-items: center;  
+        }
+        th{
+            color: orange;
+        }
+        .about{
+            display: block;
+            border:1px solid orange;
+            padding:5px;
+        }
+        .about a{
+            color:orange;
+        }
+        a:hover{
+        color:rgb(145, 138, 138);
+        transform: scale(1.1);
+    }
+    .tab p{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            text-transform: uppercase;
+        }
+                
+    </style>
+    <body>
+<div class="box">
+    <div class="left">
+        <div class="text">
+            <div class="img">
+                <img src="CVimg01.jpg" alt="profilnaSlika">
+            </div>
+            <h2>Jasmina Zukancic<br><span>Bachelor of Business Informatics</span></h2>
+
+        </div>
+        <div class="contact">
+            <h3 class="title">Contact info</h3>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                    <span class="text">+38765199198</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">jasminazukancic@gmail.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-github" aria-hidden="true"></i>
+                    </span>
+                    <span class="text"><a href="https://github.com/jasmina90tz">wwww.github.com/jasminazukancic</a></span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </span>
+                    <span class="text"><a href="https://www.linkedin.com/in/jasmina-zukancic">www.linkedin.com/jasminazukancic</a></span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">Maka Dizdara 35/13-5, Tuzla, Bosnia and Herzegovina</span>
+                </li>
+            </ul>
+            <div class="education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <h5>2012 - 2015</h5>
+                        <h4>BACHELOR OF BUSINESS INFORMATICS</h4>
+                        <h4>College of Computer Science and Business Communications eMPIRICA</h4>
+                    </li>
+                    <li>
+                        <h5>2014</h5>
+                        <h4>CCNA Discovery: Networking for Home and Small Businesses</h4>
+                        <h4>Cisco Academy</h4>
+                    </li>
+                    <li>
+                        <h5>2012 - 2015</h5>
+                        <h4>Bachelor of Business Informatics</h4>
+                        <h4>College of Computer Science and Business Communications eMPIRICA</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="language">
+                <h3 class="title">Languages</h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent"><div style="width:90%"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">German</span>
+                        <span class="percent"><div style="width:30%"></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="right">
+        <div class="about">
+        <h2>About me</h2><br>
+        <p>My name is Jasmina Zukancic and I am a Bachelor of Business Informatics. I am someone who is fighter and strongly keeping focus on goals.<br>Story on this site <a href="https://lolamagazin.com/2018/06/29/da-mogu-sta-sve-moze-jedna-kcerka-da-bi-sacuvala-zivot-majke/" target="blank">Jasmina Zukancic</a> is something that is telling almost everything about me.</p>
+        </div>
+        <div class="tab">
+        <p><a href="experience.html">Experience</a><a href="skills.html">Skills</a></p>
+    </div>
+    </div>
+            
+</div>
+                            
+    
+
+    </body>
+</html>
